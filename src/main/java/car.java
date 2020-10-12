@@ -13,7 +13,7 @@ public class car {
    public String make;
    public int speed1;
 
-   public void Car(int model,String carMake)
+   public  car(int model,String carMake)
 {
    yearModel =  model;
   make = carMake;
@@ -56,7 +56,7 @@ public void acceleration ()
     speed1= speed1+5;
 }
 
-public void break(int speed1)
+public void breaks()
 {
   speed1 = speed1-5;
   

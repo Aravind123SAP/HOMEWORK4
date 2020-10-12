@@ -22,7 +22,7 @@ public class newCar
    String make=null;
 
   Scanner sc = new Scanner (System.in);
-Car myCar = new Car(yearModel,make);
+car myCar = new car(yearModel,make);
 System.out.println("Enter year of car:");
 yearModel = sc.nextInt();
 
@@ -34,14 +34,14 @@ speed = sc.nextInt();
 
 for(int i=0; i<5; i++)
 {
-   myCar.acceleration(speed);
-   System.out.println(" car speed is:" +speed);
+   myCar.acceleration();
+   System.out.println(" car speed is:" +myCar.getSpeed());
 }
-
+ 
 for(int i=0; i<5; i++)
 {
-   myCar.break(speed);
-   System.out.println(" car speed is:" +speed);
+   myCar.breaks();
+   System.out.println(" car speed is:" +myCar.getSpeed());
 }
 
 }

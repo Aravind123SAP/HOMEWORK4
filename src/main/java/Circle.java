@@ -61,13 +61,15 @@ public static void main( String args[])
 System.out.println("Enter radius:");
 radius = sc.nextDouble();
 
-Circle myCircle = new Circle();
+Circle myCircle = new Circle(radius);
 // circle = myCircle.getArea();
 
-System.out.println(" area is:" + circle.getArea());
+System.out.println(" area is:" + myCircle.getArea());
 
-System.out.println(" diameter is:" + circle.getDiameter());
+System.out.println(" diameter is:" + myCircle.getDiameter());
 
-System.out.println(" circumference is:" + circle.getCircumference());
+System.out.println(" circumference is:" + myCircle.getCircumference());
+
+
 }
 }
